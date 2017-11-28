@@ -64,7 +64,7 @@ def about():
 
 
 ###############################################################################
-# goings to /articles and also sends the data to article
+# goes to /articles and also sends the data to article
 ###############
 @app.route('/articles')
 def articles():
