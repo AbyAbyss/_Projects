@@ -1,0 +1,81 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view2">
+    <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      
+     
+     <div class="container flex-equal-around-justified">
+        
+        <a href="[[rootPath]]view1"style="text-decoration: none;">
+            <paper-button raised>Home</paper-button>
+          </a>  
+          
+          <a href="[[rootPath]]view2"style="text-decoration: none;">
+          <paper-button raised class="indigo">Active Tasks</paper-button>
+        </a>
+        <a href="[[rootPath]]view3"style="text-decoration: none;">
+          <paper-button raised>Completed Tasks</paper-button>
+        </a>
+        <custom-style>
+              <style is="custom-style">
+                .flex-equal-around-justified {
+                  @apply --layout-horizontal;
+                  @apply --layout-around-justified;
+                }
+                paper-button.indigo {
+          background-color: var(--paper-indigo-500);
+          color: white;
+          --paper-button-raised-keyboard-focus: {
+            background-color: var(--paper-pink-a200) !important;
+            color: white !important;
+          };
+        }
+       
+              </style>
+            </custom-style>
+  </div>
+  
+  <!-- <div class="circle">1</div> -->
+  <h1>Active Task</h1>
+  <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
+  <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+
+
+  
+
+ <ul id="todoNow"></ul> 
+  
+  
+    </div>
+  </template>
+
+    <script>
+        class MyView2 extends Polymer.Element {
+            static get is() {
+                return 'my-view2';
+            }
+        }
+
+        window.customElements.define(MyView2.is, MyView2);
+    </script>
+</dom-module>

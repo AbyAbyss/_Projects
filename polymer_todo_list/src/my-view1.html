@@ -1,0 +1,161 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="shared-styles.html">
+<script src="myscripts.js"></script>
+
+
+
+<dom-module id="my-view1">
+    <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    
+      <!--<div class="circle">1</div>
+      <h1>View One</h1>
+      <p>Ut labores minimum atomorum pro. Laudem tibique ut has.</p>
+      <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
+      
+      -->
+      
+      <!--<custom-style>
+        <style is="custom-style">
+          paper-checkbox.red {
+            --paper-checkbox-size: 2em;
+            --paper-checkbox-checked-color: var(--paper-red-500);
+            --paper-checkbox-checked-ink-color: var(--paper-red-500);
+            --paper-checkbox-unchecked-color: var(--paper-red-900);
+            --paper-checkbox-unchecked-ink-color: var(--paper-red-900);
+            --paper-checkbox-label-color: var(--paper-red-500);
+            --paper-checkbox-vertical-align: top;
+          }
+      
+          paper-checkbox.green {
+            align-self: center;
+            border: 1px solid var(--paper-green-200);
+            padding: 8px 16px;
+      
+            --paper-checkbox-checked-color: var(--paper-green-500);
+            --paper-checkbox-checked-ink-color: var(--paper-green-500);
+            --paper-checkbox-unchecked-color: var(--paper-green-900);
+            --paper-checkbox-unchecked-ink-color: var(--paper-green-900);
+            --paper-checkbox-label-color: var(--paper-green-500);
+            --paper-checkbox-label-spacing: 0;
+            --paper-checkbox-margin: 8px 16px 8px 0;
+            --paper-checkbox-vertical-align: top;
+          }
+      
+          paper-checkbox.blue {
+            --paper-checkbox-checked-color: var(--paper-blue-500);
+            --paper-checkbox-checked-ink-color: var(--paper-blue-500);
+            --paper-checkbox-unchecked-color: var(--paper-blue-900);
+            --paper-checkbox-unchecked-ink-color: var(--paper-blue-900);
+            --paper-checkbox-label-color: var(--paper-blue-500);
+            --paper-checkbox-label-checked-color: var(--paper-blue-900);
+          }
+      
+          paper-checkbox .subtitle {
+            display: block;
+            font-size: 0.8em;
+            margin-top: 2px;
+            max-width: 150px;
+          }
+        </style>  
+      </custom-style>  
+      
+
+
+
+      
+      <paper-checkbox class="red">
+        Checkbox
+        <span class="subtitle">With a subtitle</span>
+      </paper-checkbox>
+      <paper-checkbox checked class="green">
+        Checkbox
+        <span class="subtitle">
+          With a longer subtitle that wraps to another line
+        </span>
+      </paper-checkbox>
+      <paper-checkbox class="blue">Checkbox</paper-checkbox>   -->
+    <div class="card">
+        <div class="container flex-equal-around-justified">
+          <a href="[[rootPath]]view1"style="text-decoration: none;">
+                <paper-button raised class="indigo">Home</paper-button>
+            </a>  
+    
+          <a href="[[rootPath]]view2"style="text-decoration: none;">
+                <paper-button raised>Active Tasks</paper-button>
+            </a>
+          <a href="[[rootPath]]view3"style="text-decoration: none;">
+                <paper-button raised>Completed Tasks</paper-button>
+           </a>
+          <custom-style>
+              <style is="custom-style">
+                .flex-equal-around-justified {
+                  @apply --layout-horizontal;
+                  @apply --layout-around-justified;
+                }
+                paper-button.indigo {
+                background-color: var(--paper-indigo-500);
+                color: white;
+                --paper-button-raised-keyboard-focus: {
+                background-color: var(--paper-pink-a200) !important;
+                color: white !important;
+                  };
+                }
+       
+              </style>
+          </custom-style>
+      </div>
+
+      <pre>
+          
+                      
+                    </pre>
+
+        <div>
+          
+           <h1>TO-DO list</h1>
+            <div class="container flex-equal-around-justified"> 
+                <input id="inputNow"style="width:50%;padding:20px"placeholder="Add Activity"></input>
+                <button id="btnNow" style="width:20%;background-color:rgb(234, 233, 236)"onclick="myFunction()">ADD</button>
+            </div>
+          <hr/>
+            <ul id="todoNow"></ul>
+            <ul id="doneNow"></ul>
+          
+    </div>
+    </div>
+    </template>
+
+
+    <script>
+        //below class is needed 
+        class MyView1 extends Polymer.Element {
+            static get is() {
+                return 'my-view1';
+            }
+        }
+
+        window.customElements.define(MyView1.is, MyView1);
+    </script>
+</dom-module>
