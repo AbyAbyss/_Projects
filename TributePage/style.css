@@ -1,0 +1,27 @@
+.blackg {
+    background-color: black;
+}
+
+.sizei {
+    height: 300px;
+    width: 800px
+}
+
+.big {
+    font-size: 25px;
+    color: gray;
+    font-family: monospace;
+}
+
+h3 {
+    font-family: monospace;
+    color: white;
+}
+
+.jumbotron {
+    background-color: black;
+}
+
+p {
+    color: white;
+}
