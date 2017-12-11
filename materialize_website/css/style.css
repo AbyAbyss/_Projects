@@ -1,0 +1,21 @@
+body {background-color:gray;}
+.fullnavbg {background-image:url('https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.fontstyle{
+    font-size:60px;
+    font-weight:bold
+}
+.navbar-fixed {position: absolute;z-index:999999999;}
+
+.raise:hover,
+.raise:focus {
+  transform: translateY(-0.35em);
+}
+
+nav ul li:hover {
+   background-color: grey;
+   color:black;
+}
