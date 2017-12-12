@@ -1,4 +1,6 @@
-body {background-color:gray;}
+body {
+  background-color:gray;
+}
 .fullnavbg {background-image:url('../img/Website-Design-Background.png');
 background-size: cover;
 background-repeat: no-repeat;
@@ -28,12 +30,9 @@ background-attachment: fixed;
 .raise:hover,
 .raise:focus {
   transform: translateY(-0.35em);
-  
 }
 
 nav ul li:hover {
    background-color: grey;
-   color:black;
 }
-
 
