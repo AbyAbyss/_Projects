@@ -1,23 +1,39 @@
 body {background-color:gray;}
-.fullnavbg {background-image:url('https://www.digitalplatforms.co.za/wp-content/uploads/2015/11/Website-Design-Background.png');
+.fullnavbg {background-image:url('../img/Website-Design-Background.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
 .fontstyle{
-    font-size:30px;
+    font-size:17px;
     font-weight:bold;
     font-family: monospace;
     margin-left: 10px;
+    padding: 40px;
 }
+
+.showcase{
+  padding: 120px 100px;
+  color: white;
+}
+
+.showcase h1{
+  font-size: 40px;
+  font-weight: 700;
+  
+}
+
 .navbar-fixed {position: absolute;z-index:999999999;}
 
 .raise:hover,
 .raise:focus {
   transform: translateY(-0.35em);
+  
 }
 
 nav ul li:hover {
    background-color: grey;
    color:black;
 }
+
+
