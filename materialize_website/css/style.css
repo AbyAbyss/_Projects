@@ -1,5 +1,5 @@
 body {
-  background-color:gray;
+  background-color:grey;
 }
 .fullnavbg {background-image:url('../img/Website-Design-Background.png');
 background-size: cover;
@@ -22,7 +22,7 @@ background-attachment: fixed;
 .showcase h1{
   font-size: 40px;
   font-weight: 700;
-  
+
 }
 
 .navbar-fixed {position: absolute;z-index:999999999;}
@@ -36,3 +36,11 @@ nav ul li:hover {
    background-color: grey;
 }
 
+.section{
+  padding: 40px 0;
+}
+
+.section h2{
+  padding: 0;
+  margin: 0;
+}
