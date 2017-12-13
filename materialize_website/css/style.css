@@ -13,7 +13,9 @@ background-attachment: fixed;
     margin-left: 10px;
     padding: 40px;
 }
-
+.discrption{
+  font-size: 15px;
+}
 .showcase{
   padding: 120px 100px;
   color: white;
@@ -43,4 +45,19 @@ nav ul li:hover {
 .section h2{
   padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width:600px){
+  .discrption{
+    font-size: 12px;
+  }
+  .showcase{
+    height: 400px;
+    padding: 60px 0;
+  }
+  .showcase h1{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
 }
