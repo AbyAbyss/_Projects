@@ -42,6 +42,10 @@ nav ul li:hover {
    background-color: #7e57c2;
 }
 
+.hover_disable:hover{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .section{
   padding: 40px 0;
 }
