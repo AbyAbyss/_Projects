@@ -11,6 +11,7 @@
   <!--Importing materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -71,7 +72,89 @@
         <hr>
         <p class="discrption">A responsive front-end Material Design Lorem ipsum dolo ore, quaerat, perspiciatis? Porro dignissimos eum cumque
           sit doloribus quibusdam? Suscipit labore dignissimos ut quod eaque.</p>
-        <button class="btn-large waves-effect deep-purple lighten-1 hoverable raise" style="opacity: .6;">Start Here</button>
+        <a href="#modal1" class="btn btn-large modal-trigger waves-effect deep-purple darken-1 hoverable raise" style="opacity: .7;">Start Here</a>
+
+        <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+      <!-- test -->
+
+      <ul id="tabs-swipe-demo" class="tabs">
+          <li class="tab col s3"><a href="#test-swipe-1">Login</a></li>
+          <li class="tab col s3"><a class="active" href="#test-swipe-2">Sign Up</a></li>
+        </ul>
+
+        <div id="test-swipe-1" class="col s12 grey lighten-3">
+            <div class="container center">
+                <div class="modal-content">
+                    <h4 class="grey-text text-darken-2">Login</h4>     
+                  </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">
+                            Email
+                          </label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">
+                              password
+                            </label>
+                          </div>
+                    </div>
+                    <a href="#" class="modal-action modal-close waves-effect waves-green deep-purple lighten-1 btn-large">Sign In</a>
+                </form>
+              </div>
+        </div>
+        </div>
+        <div id="test-swipe-2" class="col s12 black-text">
+            <div class="container center">
+                <div class="modal-content">
+                    <h4 class="grey-text text-darken-2">Sign Up</h4>     
+                  </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">
+                        First Name
+                      </label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">
+                          Last Name
+                        </label>
+                      </div>
+                      <div class="input-field col s12">
+                          <input id="email" type="text" class="validate">
+                          <label for="email">
+                            Email
+                          </label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">
+                              password
+                            </label>
+                          </div>
+                          <div class="input-field col s12">
+                              <input id="confirm_password" type="password" class="validate">
+                              <label for="confirm_password">
+                                Confirm Password
+                              </label>
+                            </div>
+                    </div>
+                    <a href="#" class="modal-action modal-close waves-effect waves-green deep-purple lighten-1 btn-large">Sign Up</a>
+                </form>
+              </div>
+        </div>
+    </div>
+
+
       </div>
     </section>
     <br>
@@ -244,7 +327,6 @@
           <button class="btn btn-large waves-effect deep-purple lighten-1 hoverable raise" type="submit" name="action">Submit
             <i class="material-icons right">send</i>
           </button>
-
         </form>
       </div>
     </div>
@@ -259,7 +341,18 @@
     <div id ="down" class="no-pad-bot">
       <div class="container">
        <div class="container z-depth-5 hoverable">
-      <p style="padding:40px;margin:40px;background:black;color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fugit.</p>
+      <footer id="footer">
+          <div class="row center  deep-purple-text darken-4">
+            <div class="small-12 medium-6 medium-offset-3 columns">
+              <h3 class="brand-logo">AA</h3>
+              <p class="light grey-text text-darken-4" id="copyright">Copyright &copy; 2017 | AbyAbyss</p> 
+              <a href="https://github.com/AbyAbyss"target="_blank"><i class="fa fa-github fa-2x  grey-text text-darken-4"></i></a>
+                <a href="https://www.facebook.com/aby.saji.12" target="_blank"><i class="fa fa-facebook fa-2x  grey-text text-darken-4"></i></a>
+                <a href="https://plus.google.com/u/0/107949304743588561753" target="_blank"><i class="fa fa-google fa-2x grey-text text-darken-4"></i></a>
+                <a href="https://codepen.io/AbyAbyss/" target="_blank"><i class="fa fa-codepen fa-2x   grey-text text-darken-4"></i></a></p>
+            </div>
+          </div>
+        </footer>
     </div>
       </div>
     </div>
@@ -267,8 +360,6 @@
       <img src="img/bg.jpg" alt="Unsplashed background img 1">
     </div>
   </div>
-  
-
 
   <!--Importing jQuery and materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -288,6 +379,19 @@
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true, // Choose whether you can drag to open on touch screens,
       });
+
+
+      // modal with option... can also use $('.modal').modal();
+      $('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .7, // Opacity of modal background
+      inDuration: 300, // Transition in duration
+      outDuration: 200, // Transition out duration
+      startingTop: '4%', // Starting top style attribute
+      endingTop: '10%', // Ending top style attribute
+      
+    }
+  );
       // collapse/ accordion
       $('.collapsible').collapsible();
       $(".title_animation").addClass("animated slideInLeft");
