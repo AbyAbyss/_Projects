@@ -1,10 +1,17 @@
 body {
-  background-color:grey;
+  background-color:white;
 }
-.fullnavbg {background-image:url('../img/Website-Design-Background.png');
+.fullnavbg {background-image:url('../img/bg.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
+}
+.parallax-container {
+  height: 200px;
+  //border-radius: 5%;
+  //padding-bottom: 40px;
+  
+  //margin:5px 5px 5px 5px;
 }
 .fontstyle{
     font-size:17px;
@@ -35,7 +42,7 @@ background-attachment: fixed;
 }
 
 nav ul li:hover {
-   background-color: grey;
+   background-color: #7e57c2;
 }
 
 .section{
